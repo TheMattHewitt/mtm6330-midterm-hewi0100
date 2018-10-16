@@ -1,0 +1,99 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #feffff;
+  color: rgba(0, 0, 0, 0.78);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 100%;
+  line-height: 1.64rem;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Permanent Marker", cursive;
+  color: white;
+  font-size: 135px;
+  padding-right: 25px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba(0, 0, 0, 0.89);
+}
+
+.container {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: right;
+  padding: 0px;
+  margin: 0px;
+}
+
+.icon {
+  padding: 10px;
+}
+
+li {
+  color: black;
+  font-family: "Permanent Marker", cursive;
+  font-size: 75px;
+  border: 5px solid;
+  border-top: 0px;
+  padding: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  width: auto;
+  height: 300px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  max-width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.column {
+  flex: 100%;
+  max-width: 50%;
+  padding-right: 10px;
+  height: auto;
+}
+
+.column img {
+  height: auto;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
