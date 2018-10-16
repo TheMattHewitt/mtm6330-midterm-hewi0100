@@ -102,3 +102,12 @@ header{
     margin-top: 10px;
     max-width:100%;
 }
+
+@media screen and (max-width: 480px){
+
+h1{
+    font-size: 50%;
+    max-width: auto;
+}
+
+}
