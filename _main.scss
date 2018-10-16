@@ -77,8 +77,8 @@ header{
     height: 300px;
     background-color:black;
     display: flex;
-    justify-content: center;
-    align-items: center;
+   // justify-content: center;
+   // align-items: center;
 }
 .gallery{
     max-width: 50%;
@@ -112,6 +112,7 @@ h1{
 }
 header{
     max-width: 100%;
+    display: flex;
 }
 
 
