@@ -1,4 +1,5 @@
-
+$primecolour: black;
+$fontcolor: white;
 
 html {
   box-sizing: border-box;
@@ -20,13 +21,15 @@ body {
   line-height: 1.64rem;
   margin: 0;
   padding: 0;
+  height: auto;
 }
 
 h1{
     font-family: 'Permanent Marker', cursive;
-    color:white;
+    color:$fontcolor;
     font-size: 135px;
     padding-right: 25px;
+    display:flex;
   
 }
 h2,
@@ -40,7 +43,7 @@ h6 {
 .container{
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0;
     padding:0;
 
@@ -49,23 +52,33 @@ h6 {
 .socialmedia{
     display:flex;
     justify-content: right;
-    padding: 0px;
-    margin: 0px;
+    
 
 }
 .icon {
     padding: 10px;
 }
-li{
-    color: black;
+
+.nav{
+    display: flex;
+    justify-content: center;
+
+}
+ .nav-item{
+    color:$primecolour;
+    
     font-family: 'Permanent Marker', cursive;
     font-size: 75px;
     border: 5px solid;
     border-top: 0px;
     padding:25px;
-
+    text-align: center;
   
 }
+a:hover {
+    color: red;
+}
+
 a{
     text-decoration: none;
     color:inherit;
@@ -73,18 +86,32 @@ a{
    
 }
 header{
-    width: 100%;
+    min-width: 100%;
     height: 300px;
-    background-color:black;
+    background-color:$primecolour;
     display: flex;
-   // justify-content: center;
-   // align-items: center;
+   justify-content: center;
+   align-items: center;
 }
+
+footer{
+    display: flex;
+    height:300px;
+    background-color: $primecolour;
+    justify-content: space-around;
+    flex-flow:row wrap;
+    margin-top: 5px;
+    color: $fontcolor;
+}
+ p{
+    font-family: 'Inconsolata', monospace;
+ }
+
 .gallery{
-    max-width: 50%;
+    max-width: 75%;
     display: flex;
     flex-wrap:wrap;
-    //justify-content:center;
+    justify-content:center;
     margin: auto;
     
     
@@ -95,6 +122,23 @@ header{
     max-width: 50%;
     padding-right: 10px;
     height: auto;
+
+}
+.column2{
+    flex: 50%;
+    max-width: 50%;
+    padding-right: 10px;
+    height: auto; 
+
+}
+
+.column2  img{
+    
+   padding: 25px;
+    max-width: 100%;
+    margin:auto;
+    height: auto;
+    
 }
 
 .column img {
@@ -103,17 +147,43 @@ header{
     max-width:100%;
 }
 
-@media(max-width: 480px){
 
-h1{
-    font-size: 50%;
-    max-width: 100%;
+.videos{
+    
+    justify-content: center;
+    padding-top: 10px;
+    max-width:50%;
+    max-height: 50%;
+    margin: auto;
+}
+
+
+
+@media screen and  (max-width: 768px){
+ 
+.nav{
     display: block;
+    justify-content: center;
 }
-header{
+    .nav-item{
+        font-size: 50px;
+        padding: 12px;
+    }
+
+  h1{
+      
+      //font-size: 75px;
+      
+  }
+.column{
+    
+    flex: 100%;
     max-width: 100%;
-    display: flex;
 }
 
-
+.column2{
+    
+    flex: 100%;
+    max-width: 100%;
+}
 }
