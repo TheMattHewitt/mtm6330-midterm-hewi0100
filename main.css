@@ -118,8 +118,7 @@ p {
 .column2 {
   flex: 50%;
   max-width: 50%;
-  padding-right: 25px;
-  padding-left: 25px;
+  margin: 50%;
   height: auto;
 }
 
