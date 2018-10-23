@@ -1,6 +1,7 @@
+//sass colour variables
 $primecolour: black;
-$fontcolor: white;
-
+$fontcolour: white;
+// clean reformat
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -23,10 +24,10 @@ body {
   padding: 0;
   height: auto;
 }
-
+// h1 for the banner in the header
 h1{
     font-family: 'Permanent Marker', cursive;
-    color:$fontcolor;
+    color:$fontcolour;
     font-size: 135px;
     padding-right: 25px;
     display:flex;
@@ -39,7 +40,7 @@ h5,
 h6 {
   color: rgba(0, 0, 0, 0.89);
 }
-
+// container used for footer
 .container{
     list-style-type: none;
     display: flex;
@@ -49,6 +50,7 @@ h6 {
 
 
 }
+//socialmedia icons
 .socialmedia{
     display:flex;
     justify-content: right;
@@ -58,7 +60,7 @@ h6 {
 .icon {
     padding: 10px;
 }
-
+// nav bar styling 
 .nav{
     display: flex;
     justify-content: center;
@@ -85,6 +87,7 @@ a{
     
    
 }
+// header styling 
 header{
     min-width: 100%;
     height: 300px;
@@ -93,7 +96,7 @@ header{
    justify-content: center;
    align-items: center;
 }
-
+//footer styling
 footer{
     display: flex;
     height:300px;
@@ -101,12 +104,13 @@ footer{
     justify-content: space-around;
     flex-flow:row wrap;
     margin-top: 5px;
-    color: $fontcolor;
+    color: $fontcolour;
 }
  p{
     font-family: 'Inconsolata', monospace;
  }
 
+ // main styling for all the pictures 
 .gallery{
     max-width: 75%;
     display: flex;
@@ -116,6 +120,7 @@ footer{
     
     
 }
+//colum styling used on almost every page
 .column {
     
     flex: 50%;
@@ -147,7 +152,7 @@ footer{
     max-width:100%;
 }
 
-
+// videos styling 
 .videos{
     
     justify-content: center;
@@ -158,7 +163,7 @@ footer{
 }
 
 
-
+// mobile view resizing 
 @media screen and  (max-width: 768px){
  
 .nav{
@@ -170,11 +175,6 @@ footer{
         padding: 12px;
     }
 
-  h1{
-      
-      //font-size: 75px;
-      
-  }
 .column{
     
     flex: 100%;
