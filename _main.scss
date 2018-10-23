@@ -101,8 +101,8 @@ footer{
     display: flex;
     height:300px;
     background-color: $primecolour;
-    justify-content: space-around;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
     flex-flow:row wrap;
     margin-top: 5px;
     color: $fontcolour;
